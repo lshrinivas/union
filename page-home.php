@@ -22,11 +22,27 @@ get_header(); ?>
             <div class="container-fluid home_container" style="background-image:url(<?php echo $feat_image; ?>)">
                 <div class="row">
                     <div class="col-xs-4 col-xs-offset-8 call_to_action-container">
-                        <div class="call_to_action">Speak</div>
-                        <div class="call_to_action">Share</div>
-                        <div class="call_to_action">Support</div>
+                        <?php
+                            if (have_posts()) :
+                               while (have_posts()) :
+                                  the_post();
+                                     foreach (get_post_meta(get_the_ID(), 'motto') as $motto)
+                                        echo "<div class=\"call_to_action\">$motto</div>";
+                               endwhile;
+                            endif;
+                        ?>
                     </div>
                 </div>
+            </div>
+            <div class="container-fluid">
+                <?php
+                    if (have_posts()) :
+                       while (have_posts()) :
+                          the_post();
+                            the_content();
+                       endwhile;
+                    endif;
+                ?>
             </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -23,13 +23,8 @@ get_header(); ?>
                 <div class="row">
                     <div class="col-xs-4 col-xs-offset-8 call_to_action-container">
                         <?php
-                            if (have_posts()) :
-                               while (have_posts()) :
-                                  the_post();
-                                     foreach (get_post_meta(get_the_ID(), 'motto') as $motto)
-                                        echo "<div class=\"call_to_action\">$motto</div>";
-                               endwhile;
-                            endif;
+                             foreach (get_post_meta($post->ID, 'motto') as $motto)
+                                echo "<div class=\"call_to_action\">$motto</div>";
                         ?>
                     </div>
                 </div>

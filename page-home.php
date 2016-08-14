@@ -38,6 +38,7 @@ get_header(); ?>
                                 <div class="item <?php echo $activeClass; ?>">
                                     <img src="<?php echo wp_get_attachment_image_src( $img->ID, 'full' )[0]; ?>" alt="Carousel image">
                                     <div class="carousel-caption">
+                                        <h4>This is a quote which is meant to be very inspiring</h4>
                                     </div>
                                 </div>
                         <?php

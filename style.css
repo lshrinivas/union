@@ -527,6 +527,12 @@ a:active {
 	outline: 0;
 }
 
+.navbar {
+	margin-bottom: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -753,11 +759,6 @@ object {
 	max-width: 100%;
 }
 
-.logo-image {
-    width: 250px;
-    height: 63px;
-}
-
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
@@ -854,11 +855,15 @@ object {
 --------------------------------------------------------------*/
 .home_container {
     background-repeat: repeat-x;
-    height: 50vh;
+    height: 80vh;
     background-position: center center;
     background-size: cover;
 }
 
+.logo-image {
+    width: 600px;
+    height: 150px;
+}
 .call_to_action-container {
     height: 50vh;
 }
@@ -884,4 +889,13 @@ object {
 
 .call_to_action:nth-child(3) {
     background: #1DADE9;
+}
+
+.home_logo-container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 30px;
+    background: rgba(255,255,255, 0.6);
+    padding: 30px;
 }

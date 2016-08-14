@@ -20,16 +20,19 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <div class="container-fluid home_container" style="background-image:url(<?php echo $feat_image; ?>)">
+                <div class="home_logo-container">
+                    <img src="<?php header_image(); ?>" class="logo-image" alt="TEAM Logo">
+                </div>
+            </div>
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-4 col-xs-offset-8 call_to_action-container">
+                    <div class="col-xs-12 call_to_action-container">
                         <?php
                              foreach (get_post_meta($post->ID, 'motto') as $motto)
                                 echo "<div class=\"call_to_action\">$motto</div>";
                         ?>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid">
                 <?php
                     if (have_posts()) :
                        while (have_posts()) :

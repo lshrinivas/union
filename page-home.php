@@ -58,7 +58,7 @@ get_header(); ?>
                     </a>
                 </div>
                 <div class="home_logo-container">
-                    <img src="<?php header_image(); ?>" class="logo-image" alt="TEAM Logo">
+                    <img src="<?php echo $feat_image; ?>" class="logo-image" alt="TEAM Logo">
                 </div>
             </div>
             <div class="container-fluid">

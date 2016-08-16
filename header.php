@@ -47,29 +47,35 @@
                     <?php endif; /*End header image check.*/ ?>
                 </div>
             <?php endif; /*End front page check.*/ ?>
-            <nav id="site-navigation" class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header navbar-left">
-                        <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-md-8">
+                        <nav id="site-navigation" class="navbar navbar-default" role="navigation">
+                            <div class="navbar-header navbar-left">
+                                <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="main_nav">
+                                <?php wp_nav_menu( array(
+                                    'theme_location' => 'primary',
+                                    'menu_id' => 'primary-menu',
+                                    'menu_class' => 'nav navbar-nav',
+                                     'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                     'walker' => new wp_bootstrap_navwalker()
+                                 ) ); ?>
+                            </div>
+                        </nav><!-- #site-navigation -->
                     </div>
-                    <div class="collapse navbar-collapse" id="main_nav">
-                        <?php wp_nav_menu( array(
-                            'theme_location' => 'primary',
-                            'menu_id' => 'primary-menu',
-                            'menu_class' => 'nav navbar-nav',
-                             'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                             'walker' => new wp_bootstrap_navwalker()
-                         ) ); ?>
+                    <div class="col-xs-6 col-md-4">
+                        <div class="social_media pull-right">
+                            <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+                        </div>
                     </div>
                 </div>
-            </nav><!-- #site-navigation -->
-            <div class="social_media">
-                <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
             </div>
 		</div><!-- .site-branding -->
 

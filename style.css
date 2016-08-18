@@ -886,17 +886,21 @@ object {
 }
 
 .call_to_action-title {
+    position: relative;
     font-size: 20px;
     text-transform: uppercase;
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
     text-align: center;
+    z-index: 1;
 }
 
 .call_to_action-subtitle {
+    position: relative;
     font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
     font-size: 16px;
+    z-index: 1;
 }
 
 .call_to_action-overlay {
@@ -905,29 +909,30 @@ object {
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 0;
 }
 
-.call_to_action-overlay:nth-child(1) {
+.call_to_action:nth-child(1) .call_to_action-overlay {
     background-color: rgba(129,56,148,0.3);
 }
 
-.call_to_action-overlay:nth-child(2) {
+.call_to_action:nth-child(2) .call_to_action-overlay {
     background-color: rgba(108,169,66,0.3);
 }
 
-.call_to_action-overlay:nth-child(3) {
+.call_to_action:nth-child(3) .call_to_action-overlay {
     background-color: rgba(29,173,233,0.3);
 }
 
-.call_to_action-overlay:nth-child(1):hover {
+.call_to_action:nth-child(1) .call_to_action-overlay:hover {
     background-color: rgba(129,56,148,0.4);
 }
 
-.call_to_action-overlay:nth-child(2):hover {
+.call_to_action:nth-child(2) .call_to_action-overlay:hover {
     background-color: rgba(108,169,66,0.4);
 }
 
-.call_to_action-overlay:nth-child(3):hover {
+.call_to_action:nth-child(3) .call_to_action-overlay:hover {
     background-color: rgba(29,173,233,0.4);
 }
 

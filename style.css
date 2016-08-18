@@ -911,7 +911,7 @@ object {
     color: #1DADE9;
 }
 
-.call_to_action:nth-child(1):hover:after {
+.call_to_action:hover:after {
     content: ' ';
     position: absolute;
     left: 0;

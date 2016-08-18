@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="container site-footer" role="contentinfo">
-		If you or someone you know needs immediate help, please call the Crisis Hotline: 800.273.TALK (8255).
+		If you or someone you know needs immediate help, please call the Crisis Hotline: 800.273.8255 (TALK).
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

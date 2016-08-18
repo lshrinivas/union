@@ -899,9 +899,15 @@ object {
     font-size: 16px;
 }
 
-/*.call_to_action:nth-child(1) {*/
-    /*background: #813894;*/
-/*}*/
+.call_to_action:nth-child(1):hover:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(129,56,148,0.3);
+}
 
 /*.call_to_action:nth-child(2) {*/
     /*background: #6CA942;*/

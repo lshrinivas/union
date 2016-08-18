@@ -17,6 +17,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href='https://fonts.googleapis.com/css?family=Dosis:700,800' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -49,7 +51,7 @@
             <?php endif; /*End front page check.*/ ?>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-6 col-md-8">
+                    <div class="col-xs-6 col-md-7">
                         <nav id="site-navigation" class="navbar navbar-default" role="navigation">
                             <div class="navbar-header navbar-left">
                                 <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
@@ -70,7 +72,12 @@
                             </div>
                         </nav><!-- #site-navigation -->
                     </div>
-                    <div class="col-xs-6 col-md-4">
+                    <div class="col-xs-6 col-md-5">
+                        <a href="#">
+                            <button class="btn btn-success donate_button">
+                                Donate
+                            </button>
+                        </a>
                         <div class="social_media pull-right">
                             <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                         </div>

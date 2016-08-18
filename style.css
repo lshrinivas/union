@@ -917,23 +917,23 @@ object {
 }
 
 .call_to_action:nth-child(2) .call_to_action-overlay {
-    background-color: rgba(108,169,66,0.3);
+    background-color: rgba(108,169,66,0.5);
 }
 
 .call_to_action:nth-child(3) .call_to_action-overlay {
-    background-color: rgba(29,173,233,0.3);
+    background-color: rgba(29,173,233,0.4);
 }
 
 .call_to_action:nth-child(1) .call_to_action-overlay:hover {
-    background-color: rgba(129,56,148,0.4);
+    background-color: rgba(129,56,148,0.6);
 }
 
 .call_to_action:nth-child(2) .call_to_action-overlay:hover {
-    background-color: rgba(108,169,66,0.4);
+    background-color: rgba(108,169,66,0.8);
 }
 
 .call_to_action:nth-child(3) .call_to_action-overlay:hover {
-    background-color: rgba(29,173,233,0.4);
+    background-color: rgba(29,173,233,0.7);
 }
 
 .home_logo-container {

@@ -881,6 +881,8 @@ object {
     padding: 30px;
     height: 200px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 
 .call_to_action-title {

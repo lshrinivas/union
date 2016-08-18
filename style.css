@@ -899,17 +899,17 @@ object {
     font-size: 16px;
 }
 
-.call_to_action:nth-child(1) {
-    background: #813894;
-}
+/*.call_to_action:nth-child(1) {*/
+    /*background: #813894;*/
+/*}*/
 
-.call_to_action:nth-child(2) {
-    background: #6CA942;
-}
+/*.call_to_action:nth-child(2) {*/
+    /*background: #6CA942;*/
+/*}*/
 
-.call_to_action:nth-child(3) {
-    background: #1DADE9;
-}
+/*.call_to_action:nth-child(3) {*/
+    /*background: #1DADE9;*/
+/*}*/
 
 .home_logo-container {
     width: 40%;

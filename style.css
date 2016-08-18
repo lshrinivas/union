@@ -882,7 +882,7 @@ object {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left top;
-    color: #0F3DF6;
+    color: white;
 }
 
 .call_to_action-title {
@@ -899,8 +899,7 @@ object {
     font-size: 16px;
 }
 
-.call_to_action:hover:before {
-    content: ' ';
+.call_to_action-overlay {
     position: absolute;
     left: 0;
     right: 0;
@@ -908,16 +907,28 @@ object {
     bottom: 0;
 }
 
-.call_to_action:nth-child(1):hover:before {
+.call_to_action-overlay:nth-child(1) {
     background-color: rgba(129,56,148,0.3);
 }
 
-.call_to_action:nth-child(2):hover:before {
+.call_to_action-overlay:nth-child(2) {
     background-color: rgba(108,169,66,0.3);
 }
 
-.call_to_action:nth-child(3):hover:before {
+.call_to_action-overlay:nth-child(3) {
     background-color: rgba(29,173,233,0.3);
+}
+
+.call_to_action-overlay:nth-child(1):hover {
+    background-color: rgba(129,56,148,0.4);
+}
+
+.call_to_action-overlay:nth-child(2):hover {
+    background-color: rgba(108,169,66,0.4);
+}
+
+.call_to_action-overlay:nth-child(3):hover {
+    background-color: rgba(29,173,233,0.4);
 }
 
 .home_logo-container {

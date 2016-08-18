@@ -89,6 +89,7 @@ get_header(); ?>
                             list($title, $subtitle, $url) = explode('|', $motto);
                          ?>
                             <div class="col-xs-12 col-sm-4 call_to_action" style="background-image: url(<?php echo $url; ?>);">
+                                <div class="call_to_action-overlay"></div>
                                 <div class="call_to_action-title"><?php echo $title; ?></div>
                                 <div class="call_to_action-subtitle"><?php echo $subtitle; ?></div>
                             </div>

@@ -16,7 +16,7 @@ get_header(); ?>
 
     <?php
         $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-        $carousel_image = get_attached_media( 'image' );
+        $carousel_image = get_attached_media( 'video' );
         $quotes = get_post_meta($post->ID, 'quote');
         $videos = [
             'Click to see Amy Li\'s "Letter to myself" video',
@@ -27,6 +27,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <div class="container home_container">
+                <div class="row">
+                    <div class="divider"></div>
+                    <div class="home_logo-container">
+                        <img src="<?php echo $feat_image; ?>" class="logo-image" alt="TEAM Logo">
+                    </div>
+                    <div class="divider"></div>
+                </div>
                 <div class="row">
                     <div id="carousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -42,12 +49,15 @@ get_header(); ?>
                                 $activeClass = "active";
                                 $i = 0;
                                 foreach($carousel_image as $img) {
+                                    $img_url = wp_get_attachment_url($img->ID);
+                                    $attr = array('src' => $img_url,
+                                                  'autoplay' => 'on');
                             ?>
                                     <div class="item <?php echo $activeClass; ?>">
-                                        <img src="<?php echo wp_get_attachment_image_src( $img->ID, 'full' )[0]; ?>" alt="Carousel image">
-                                        <div class="carousel-caption">
-                                            <h3><?php echo $quotes[$i]; ?></h3>
-                                        </div>
+                                        <video autoplay loop>
+                                            <source src="<?php echo $img_url ?>">
+                                        </video>
+
                                         <div class="carousel-bar">
                                             <h4><?php echo $videos[$i]; ?></h4>
                                         </div>
@@ -69,9 +79,6 @@ get_header(); ?>
                           <span class="sr-only">Next</span>
                         </a>
                     </div>
-                </div>
-                <div class="home_logo-container">
-                    <img src="<?php echo $feat_image; ?>" class="logo-image" alt="TEAM Logo">
                 </div>
             </div>
             <div class="container">

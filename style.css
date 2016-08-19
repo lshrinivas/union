@@ -937,12 +937,10 @@ object {
 }
 
 .home_logo-container {
-    width: 40%;
+    width: 50%;
     max-width: 600px;
-    position: absolute;
-    top: 30px;
-    left: 32%;
-    background: rgba(255,255,255, 0.6);
+    position: relative;
+    left: 25%;
     padding: 5px;
 }
 
@@ -952,7 +950,7 @@ object {
 
 .carousel-bar {
     background: #813894;
-    padding: 10px;
+    padding: 2px;
     text-align: center;
     color: white;
     position: absolute;
@@ -978,4 +976,8 @@ object {
     margin: 9px 0;
     overflow: hidden;
     background-color: #e5e5e5;
+}
+
+.item video {
+    width: 100%;
 }

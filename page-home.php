@@ -97,13 +97,13 @@ get_header(); ?>
                          foreach (get_post_meta($post->ID, 'motto') as $motto) {
                             list($title, $subtitle, $url, $dest_url) = explode('|', $motto);
                          ?>
-                            <a href="<?php echo $dest_url; ?>">
-                                <div class="col-xs-12 col-sm-4 call_to_action" style="background-image: url(<?php echo $url; ?>);">
+                            <div class="col-xs-12 col-sm-4 call_to_action" style="background-image: url(<?php echo $url; ?>);">
+                                <a href="<?php echo $dest_url; ?>">
                                     <div class="call_to_action-overlay"></div>
                                     <div class="call_to_action-title"><?php echo $title; ?></div>
                                     <div class="call_to_action-subtitle"><?php echo $subtitle; ?></div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                     <?php
                          }
                     ?>

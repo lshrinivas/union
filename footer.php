@@ -15,15 +15,11 @@
 
 	<footer id="colophon" class="container site-footer" role="contentinfo">
         <div class="divider"></div>
-	    <div>
-    		If you or someone you know needs immediate help, please call the Crisis Hotline: 800.273.8255 (TALK).
-	    </div>
-	    <div>
-	        <a href="google.com">Contact Us</a>
-	        |
-	        <a href="google.com">Privacy Policy</a>
-	    </div>
 
+        <?php
+            $page = get_page_by_title( 'FooterContent' );
+            echo $page->post_content;
+        ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

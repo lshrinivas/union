@@ -35,7 +35,7 @@ get_header(); ?>
                     <div class="divider"></div>
                 </div>
                 <div class="row">
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval=16000>
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#carousel" data-slide-to="0" class="active"></li>

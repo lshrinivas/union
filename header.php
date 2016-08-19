@@ -73,7 +73,7 @@
                         </nav><!-- #site-navigation -->
                     </div>
                     <div class="col-xs-5 nav-right">
-                        <span>Follow us</span>
+                        <div>Follow us</div>
                         <div class="social_media">
                             <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                         </div>

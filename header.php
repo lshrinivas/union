@@ -51,7 +51,7 @@
             <?php endif; /*End front page check.*/ ?>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-6 col-md-7">
+                    <div class="col-xs-7">
                         <nav id="site-navigation" class="navbar navbar-default" role="navigation">
                             <div class="navbar-header navbar-left">
                                 <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
@@ -72,14 +72,17 @@
                             </div>
                         </nav><!-- #site-navigation -->
                     </div>
-                    <div class="col-xs-6 col-md-5">
-                        <a href="#">
-                            <button class="btn btn-success donate_button">
-                                Donate
-                            </button>
-                        </a>
-                        <div class="social_media pull-right">
+                    <div class="col-xs-5 nav-right">
+                        <span>Follow us</span>
+                        <div class="social_media">
                             <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <button class="btn btn-success donate_button">
+                                    Donate
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -848,20 +848,18 @@ object {
 ## Header
 --------------------------------------------------------------*/
 .site-branding {
+}
+
+.nav-right {
     display: flex;
-    display: -webkit-flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
     align-items: center;
-    -webkit-align-items: center;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
 }
 
 .social_media {
     width: 250px;
     height: 51px;
-    display: inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -965,8 +963,8 @@ object {
 }
 
 .donate_button {
-    margin-top: 8px;
-    float: right;
+    /*margin-top: 8px;*/
+    /*float: right;*/
 }
 
 .divider {

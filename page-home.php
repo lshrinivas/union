@@ -57,7 +57,9 @@ get_header(); ?>
                                         <video autoplay loop>
                                             <source src="<?php echo $img_url ?>">
                                         </video>
-
+                                        <div class="video_message">
+                                            <?php echo $quotes[$i]; ?>
+                                        </div>
                                         <div class="carousel-bar">
                                             <h4><?php echo $videos[$i]; ?></h4>
                                         </div>

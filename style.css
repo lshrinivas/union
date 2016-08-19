@@ -981,3 +981,12 @@ object {
 .item video {
     width: 100%;
 }
+
+.video_message {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    position: absolute;
+    top: 60%;
+    font-size: 27px;
+    left: 15%;
+}

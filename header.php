@@ -39,19 +39,57 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'union' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-		    <?php if ( !is_front_page() ) : ?>
-                <div class="logo_container">
-                    <?php if ( get_header_image() ) : ?>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                            <img src="<?php header_image(); ?>" class="logo-image" alt="TEAM Logo">
-                        </a>
-                    <?php endif; /*End header image check.*/ ?>
+        <?php if ( !is_front_page() && get_header_image() ) : ?>
+            <div class="container">
+                <div class="media">
+                <div class="logo_container media-left">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                        <img src="<?php header_image(); ?>" class="logo-image" alt="TEAM Logo">
+                    </a>
                 </div>
-            <?php endif; /*End front page check.*/ ?>
+                <div class="nav-container media-body">
+                    <div class="row nav-right">
+                        <div class="social_media">
+                            <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <button class="btn btn-success donate_button">
+                                    Donate
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row btn-success">
+                        <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
+                            <div class="navbar-header navbar-left">
+                                <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="main_nav">
+                                <?php wp_nav_menu( array(
+                                    'theme_location' => 'primary',
+                                    'menu_id' => 'primary-menu',
+                                    'menu_class' => 'nav navbar-nav',
+                                     'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                     'walker' => new wp_bootstrap_navwalker()
+                                 ) ); ?>
+                            </div>
+                        </nav><!-- #site-navigation -->
+                    </div>
+                </div>
+
+                </div>
+
+    		</div><!-- .container -->
+        <?php else : ?>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-7">
+                    <div class="col-xs-5 col-sm-7">
                         <nav id="site-navigation" class="navbar navbar-default" role="navigation">
                             <div class="navbar-header navbar-left">
                                 <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
@@ -72,7 +110,7 @@
                             </div>
                         </nav><!-- #site-navigation -->
                     </div>
-                    <div class="col-xs-5 nav-right">
+                    <div class="col-xs-7 col-sm-5 nav-right">
                         <div class="social_media">
                             <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                         </div>
@@ -86,9 +124,7 @@
                     </div>
                 </div>
             </div>
-		</div><!-- .site-branding -->
-
-
+        <?php endif; /*End front page check.*/ ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

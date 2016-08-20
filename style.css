@@ -546,6 +546,36 @@ a:active {
     margin-left: 15px;
 }
 
+/* navbar */
+.navbar-default {
+    background: transparent;
+    border-color: #E7E7E7;
+}
+/* link */
+.navbar-internal .navbar-nav > li > a {
+    color: white;
+}
+.navbar-internal .navbar-nav > li > a:hover,
+.navbar-internal .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-internal .navbar-nav > .active > a,
+.navbar-internal .navbar-nav > .active > a:hover,
+.navbar-internal .navbar-nav > .active > a:focus {
+    color: #333;
+    background-color: rgba(255,255,255, 0.1);
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -568,13 +598,6 @@ a:active {
 	.main-navigation ul {
 		display: block;
 	}
-}
-
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
 }
 
 .comment-navigation .nav-previous,
@@ -847,8 +870,6 @@ object {
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
-.site-branding {
-}
 
 .nav-right {
     display: flex;
@@ -860,6 +881,14 @@ object {
 .social_media {
     width: 240px;
     height: 51px;
+}
+.logo_container {
+    width: 150px;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid lightgray;}
+
+.nav-container {
 }
 
 /*--------------------------------------------------------------

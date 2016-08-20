@@ -24,8 +24,8 @@ function union_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'union_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 250,
-		'height'                 => 63,
+		'width'                  => 1650,
+		'height'                 => 450,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'union_header_style',
 	) ) );

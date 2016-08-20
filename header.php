@@ -63,7 +63,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="btn-success">
+                        <div class="">
                             <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
                                 <div class="navbar-header navbar-left">
                                     <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">

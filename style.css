@@ -532,6 +532,7 @@ a:active {
     border: none;
     background: transparent;
     box-shadow: none;
+    font-weight: bold;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -551,6 +552,12 @@ a:active {
     background: transparent;
     border-color: #E7E7E7;
 }
+
+.navbar-internal {
+    border-radius: 0;
+    background: rgba(108, 169, 66, 1);
+}
+
 /* link */
 .navbar-internal .navbar-nav > li > a {
     color: white;
@@ -563,7 +570,7 @@ a:active {
 .navbar-internal .navbar-nav > .active > a:hover,
 .navbar-internal .navbar-nav > .active > a:focus {
     color: #333;
-    background-color: rgba(255,255,255, 0.1);
+    background-color: rgba(108, 169, 66, 1);
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -883,8 +890,7 @@ object {
     height: 51px;
 }
 .logo_container {
-    margin-top: 10px;
-    border: 1px solid lightgray;
+    margin-top: 2px;
     max-width: 445px;
     width:100%;
 }
@@ -892,6 +898,7 @@ object {
 .nav-container {
     margin-top: 10px;
     width: 100%;
+    margin-left: -8px;
 }
 
 .logo_nav_container {

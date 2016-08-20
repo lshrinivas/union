@@ -29,7 +29,7 @@ get_header(); ?>
             <div class="container home_container">
                 <div class="row">
                     <div class="divider"></div>
-                    <div class="home_logo-container">
+                    <div class="col-xs-12 col-md-6 col-md-offset-3 home_logo-container">
                         <img src="<?php echo $feat_image; ?>" class="logo-image" alt="TEAM Logo">
                     </div>
                     <div class="divider"></div>

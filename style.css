@@ -935,10 +935,6 @@ object {
 }
 
 .home_logo-container {
-    width: 50%;
-    max-width: 600px;
-    position: relative;
-    left: 25%;
     padding: 5px;
 }
 
@@ -947,7 +943,7 @@ object {
 }
 
 .video-container {
-    height: 517px;
+    max-height: 517px;
     overflow: hidden;
 }
 
@@ -989,7 +985,7 @@ object {
     font-family: 'Dosis', sans-serif;
     color: white;
     position: absolute;
-    top: 60%;
+    bottom: 30%;
     font-size: 30px;
     left: 15%;
 }

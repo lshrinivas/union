@@ -45,7 +45,7 @@
         <?php if ( !is_front_page() && get_header_image() ) : ?>
             <div class="container">
                 <div class="logo_nav_container">
-                    <div class="logo_container">
+                    <div class="logo_container hidden-md hidden-xs hidden-sm">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                             <img src="<?php header_image(); ?>" class="navlogo-image" alt="TEAM Logo">
                         </a>

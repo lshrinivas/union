@@ -52,9 +52,11 @@ get_header(); ?>
                                     $img_url = wp_get_attachment_url($img->ID);
                             ?>
                                     <div class="item <?php echo $activeClass; ?>">
-                                        <video autoplay loop width="980" height="517">
-                                            <source src="<?php echo $img_url ?>">
-                                        </video>
+                                        <div class="video-container">
+                                            <video autoplay loop>
+                                                <source src="<?php echo $img_url ?>">
+                                            </video>
+                                        </div>
                                         <div class="video_message">
                                             <?php echo $quotes[$i]; ?>
                                         </div>

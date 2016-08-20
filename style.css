@@ -946,6 +946,11 @@ object {
 	max-width: 980px;
 }
 
+.video-container {
+    height: 517px;
+    overflow: hidden;
+}
+
 .carousel-bar {
     background: #813894;
     padding: 2px;

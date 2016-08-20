@@ -884,11 +884,20 @@ object {
 }
 .logo_container {
     width: 150px;
+    height: 120px;
     padding: 15px;
     margin-top: 10px;
-    border: 1px solid lightgray;}
+    border: 1px solid lightgray;
+    display: table-cell;
+}
 
 .nav-container {
+    display: table-cell;
+}
+
+.logo_nav_container {
+    display: table;
+    width: 100%;
 }
 
 /*--------------------------------------------------------------

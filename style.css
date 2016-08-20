@@ -909,6 +909,11 @@ object {
 }
 
 .logo-image {
+    width: 100%;
+    height: 100%;
+}
+
+.navlogo-image {
     width: 445px;
     height: 120px;
 }

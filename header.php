@@ -47,7 +47,7 @@
                 <div class="logo_nav_container">
                     <div class="logo_container">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                            <img src="<?php header_image(); ?>" class="logo-image" alt="TEAM Logo">
+                            <img src="<?php header_image(); ?>" class="navlogo-image" alt="TEAM Logo">
                         </a>
                     </div>
                     <div class="nav-container">

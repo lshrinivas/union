@@ -48,17 +48,17 @@ get_header(); ?>
                             <?php
                                 $activeClass = "active";
                                 $i = 0;
-                                foreach($carousel_image as $img) {
-                                    $img_url = wp_get_attachment_url($img->ID);
+                                foreach($quotes as $quote) {
+                                    list($text, $video_url) = explode('|', $quote);
                             ?>
                                     <div class="item <?php echo $activeClass; ?>">
                                         <div class="video-container">
                                             <video autoplay loop>
-                                                <source src="<?php echo $img_url ?>">
+                                                <source src="<?php echo $video_url ?>">
                                             </video>
                                         </div>
                                         <div class="video_message">
-                                            <?php echo $quotes[$i]; ?>
+                                            <?php echo $text; ?>
                                         </div>
                                         <div class="carousel-bar">
                                             <h4><?php echo $videos[$i]; ?></h4>

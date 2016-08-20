@@ -942,16 +942,15 @@ object {
 	max-width: 980px;
 }
 
-.video-container {
-    max-height: 517px;
-    overflow: hidden;
-}
-
 .carousel-bar {
     background: #813894;
     padding: 2px;
     text-align: center;
     color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .carousel-indicators {

@@ -52,11 +52,9 @@ get_header(); ?>
                                     list($text, $video_url) = explode('|', $quote);
                             ?>
                                     <div class="item <?php echo $activeClass; ?>">
-                                        <div class="video-container">
-                                            <video autoplay loop>
-                                                <source src="<?php echo $video_url ?>">
-                                            </video>
-                                        </div>
+                                        <video autoplay loop>
+                                            <source src="<?php echo $video_url ?>">
+                                        </video>
                                         <div class="video_message">
                                             <?php echo $text; ?>
                                         </div>

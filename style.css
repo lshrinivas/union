@@ -994,7 +994,7 @@ object {
     left: 15%;
 }
 
-.video_message:nth-child(2) {
+.item:nth-child(2) .video_message {
     color: black;
     top: 10%;
     left: 65%;

@@ -990,6 +990,12 @@ object {
     color: white;
     position: absolute;
     top: 60%;
-    font-size: 27px;
+    font-size: 30px;
     left: 15%;
+}
+
+.video_message:nth-child(2) {
+    color: black;
+    top: 10%;
+    left: 65%;
 }

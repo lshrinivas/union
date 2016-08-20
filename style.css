@@ -982,10 +982,6 @@ object {
     padding: 5px;
 }
 
-.container {
-	max-width: 980px;
-}
-
 .carousel-bar {
     background: #813894;
     padding: 2px;

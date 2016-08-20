@@ -50,11 +50,9 @@ get_header(); ?>
                                 $i = 0;
                                 foreach($carousel_image as $img) {
                                     $img_url = wp_get_attachment_url($img->ID);
-                                    $attr = array('src' => $img_url,
-                                                  'autoplay' => 'on');
                             ?>
                                     <div class="item <?php echo $activeClass; ?>">
-                                        <video autoplay loop>
+                                        <video autoplay loop width="980" height="517">
                                             <source src="<?php echo $img_url ?>">
                                         </video>
                                         <div class="video_message">

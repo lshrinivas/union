@@ -883,20 +883,22 @@ object {
     height: 51px;
 }
 .logo_container {
+    margin-top: 10px;
     width: 150px;
     height: 120px;
-    margin-top: 10px;
     border: 1px solid lightgray;
-    display: table-cell;
 }
 
 .nav-container {
-    display: table-cell;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .logo_nav_container {
-    display: table;
-    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 /*--------------------------------------------------------------

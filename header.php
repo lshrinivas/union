@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <div class="nav-container">
-                        <div class="row nav-right">
+                        <div class="nav-right">
                             <div class="social_media">
                                 <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                             </div>
@@ -63,7 +63,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="row btn-success">
+                        <div class="btn-success">
                             <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
                                 <div class="navbar-header navbar-left">
                                     <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">

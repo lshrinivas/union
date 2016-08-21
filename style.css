@@ -1055,6 +1055,6 @@ object {
 }
 
 .purple_hover:hover {
-    background: #813894;
-    color: white;
+    background: #813894!important;
+    color: white!important;
 }

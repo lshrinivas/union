@@ -18,7 +18,10 @@
 
         <?php
             $page = get_page_by_title( 'FooterContent' );
-            echo $page->post_content;
+            $content = $page->post_content;
+            $content = apply_filters('the_content', $content);
+            $content = str_replace(']]>', ']]>', $content);
+            echo $content;
         ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

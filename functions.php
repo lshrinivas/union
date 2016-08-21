@@ -64,6 +64,7 @@ function union_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
 }
 endif;
 add_action( 'after_setup_theme', 'union_setup' );
@@ -138,3 +139,5 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+add_shortcode('search', 'get_search_form');

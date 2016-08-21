@@ -29,7 +29,9 @@ get_header(); ?>
 				 * called content-search.php and that will be used instead.
 				 */
 				get_template_part( 'template-parts/content', 'search' );
-
+            ?>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+            <?php
 			endwhile;
 
 			the_posts_navigation();
@@ -44,5 +46,4 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

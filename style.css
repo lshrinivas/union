@@ -1051,3 +1051,7 @@ object {
 .page .entry-title {
     display: none;
 }
+
+.content-area {
+    font-size: 16px;
+}

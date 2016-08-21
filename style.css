@@ -1035,7 +1035,6 @@ object {
 }
 
 .item:nth-child(2) .video_message {
-    color: black;
     left: 65%;
 }
 

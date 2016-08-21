@@ -1054,7 +1054,11 @@ object {
     font-size: 16px;
 }
 
-.purple_hover:hover {
-    background: #813894!important;
-    color: white!important;
+.btn-purple {
+    background: #813894;
+    color: white;
+}
+
+.btn-purple.focus, .btn-purple:focus, .btn-purple:hover {
+    color: white;
 }

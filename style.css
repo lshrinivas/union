@@ -414,8 +414,7 @@ table {
 --------------------------------------------------------------*/
 button,
 input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="reset"] {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;

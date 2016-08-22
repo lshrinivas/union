@@ -144,4 +144,6 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+require get_template_directory() . '/inc/shortcodes.php';
+
 add_shortcode('search', 'get_search_form');

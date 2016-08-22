@@ -109,6 +109,10 @@ function union_scripts() {
 
 	wp_enqueue_script( 'union-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+    wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/js/jquery.easing.min.js', array (), 1.3, true);
+
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/site.js', array (), 1.1, true);
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

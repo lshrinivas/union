@@ -1,3 +1,11 @@
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
 $(function() {
     /* find all a.read_more elements and bind the following code to them */
     $('a.read_more').click(function(event){
@@ -12,5 +20,14 @@ $(function() {
         event.preventDefault(); /* prevent the a from changing the url */
         $(this).parents('.item').find('.more_text').hide(); /* hide the .more_text span */
         $(this).parents('.item').find('.read_more').show();
+    });
+
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
     });
 });

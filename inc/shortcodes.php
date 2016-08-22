@@ -11,6 +11,6 @@ function resource_video_func( $atts ) {
         'url' => ''
     ), $atts );
 
-    return '<div class="resource_video">' + $a['url'] + '</div>';
+    return '<div class="resource_video">' + "$a['url']" + '</div>';
 }
 add_shortcode( 'resource_video', 'resource_video_func' );

@@ -582,6 +582,81 @@ a:active {
     border-bottom-color: #777;
 }
 
+.navbar-scrolling {
+    background-color: rgba(129,56,148,0.5);
+    border-color: #813894;
+}
+.navbar-scrolling .navbar-brand {
+    color: #ffffff;
+}
+.navbar-scrolling .navbar-brand:hover,
+.navbar-scrolling .navbar-brand:focus {
+    color: #333333;
+}
+.navbar-scrolling .navbar-text {
+    color: #ffffff;
+}
+.navbar-scrolling .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-scrolling .navbar-nav > li > a:hover,
+.navbar-scrolling .navbar-nav > li > a:focus {
+    color: #333333;
+}
+.navbar-scrolling .navbar-nav > .active > a,
+.navbar-scrolling .navbar-nav > .active > a:hover,
+.navbar-scrolling .navbar-nav > .active > a:focus {
+    color: #333333;
+    background-color: rgba(129,56,148,0.7);
+}
+.navbar-scrolling .navbar-nav > .open > a,
+.navbar-scrolling .navbar-nav > .open > a:hover,
+.navbar-scrolling .navbar-nav > .open > a:focus {
+    color: #333333;
+    background-color: rgba(129,56,148,0.7);
+}
+.navbar-scrolling .navbar-toggle {
+    border-color: rgba(129,56,148,0.5);
+}
+.navbar-scrolling .navbar-toggle:hover,
+.navbar-scrolling .navbar-toggle:focus {
+    background-color: rgba(129,56,148,0.5);
+}
+.navbar-scrolling .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-scrolling .navbar-collapse,
+.navbar-scrolling .navbar-form {
+    border-color: #ffffff;
+}
+.navbar-scrolling .navbar-link {
+    color: #ffffff;
+}
+.navbar-scrolling .navbar-link:hover {
+    color: #333333;
+}
+
+.navbar-scrolling .nav>li>a:focus, .navbar-scrolling .nav>li>a:hover {
+    color: #333;
+    background-color: rgba(129,56,148,0.7);
+}
+
+@media (max-width: 767px) {
+    .navbar-scrolling .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-scrolling .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-scrolling .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333333;
+    }
+    .navbar-scrolling .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-scrolling .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-scrolling .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #333333;
+        background-color: rgba(129,56,148,0.7);
+    }
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -961,7 +1036,7 @@ object {
 }
 
 .call_to_action:nth-child(1) .call_to_action-overlay {
-    background-color: rgba(129,56,148,0.3);
+    background-color: rgba(129,56,148,0.5);
 }
 
 .call_to_action:nth-child(2) .call_to_action-overlay {
@@ -973,7 +1048,7 @@ object {
 }
 
 .call_to_action:nth-child(1) .call_to_action-overlay:hover {
-    background-color: rgba(129,56,148,0.6);
+    background-color: rgba(129,56,148,0.7);
 }
 
 .call_to_action:nth-child(2) .call_to_action-overlay:hover {

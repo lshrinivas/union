@@ -607,13 +607,13 @@ a:active {
 .navbar-scrolling .navbar-nav > .active > a:hover,
 .navbar-scrolling .navbar-nav > .active > a:focus {
     color: #333333;
-    background-color: rgba(129,56,148,0.7);
+    background-color: rgba(129,56,148,0.5);
 }
 .navbar-scrolling .navbar-nav > .open > a,
 .navbar-scrolling .navbar-nav > .open > a:hover,
 .navbar-scrolling .navbar-nav > .open > a:focus {
     color: #333333;
-    background-color: rgba(129,56,148,0.7);
+    background-color: rgba(129,56,148,0.5);
 }
 .navbar-scrolling .navbar-toggle {
     border-color: rgba(129,56,148,0.5);
@@ -638,7 +638,7 @@ a:active {
 
 .navbar-scrolling .nav>li>a:focus, .navbar-scrolling .nav>li>a:hover {
     color: #333;
-    background-color: rgba(129,56,148,0.7);
+    background-color: rgba(129,56,148,0.5);
 }
 
 @media (max-width: 767px) {
@@ -653,7 +653,7 @@ a:active {
     .navbar-scrolling .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-scrolling .navbar-nav .open .dropdown-menu > .active > a:focus {
         color: #333333;
-        background-color: rgba(129,56,148,0.7);
+        background-color: rgba(129,56,148,0.5);
     }
 }
 

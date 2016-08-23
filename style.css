@@ -1081,6 +1081,11 @@ object {
     overflow: auto;
 }
 
+.thumbnail .caption {
+    font-size: 14px;
+    white-space: initial;
+}
+
 a.thumbnail_left:visited, a.thumbnail_right:visited {
     color: white;
 }

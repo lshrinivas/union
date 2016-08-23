@@ -1071,6 +1071,8 @@ object {
     max-width: 350px;
     display: inline-block;
     margin: 10px;
+    height: 370px;
+    vertical-align: top;
 }
 
 .thumbnail_strip {

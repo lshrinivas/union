@@ -15,13 +15,12 @@ function resource_video_func( $atts ) {
 
     $html = <<<EOB
 <div class="thumbnail">
-  <video style="width:100%;">
-    <source src="{$a['url']}">
-  </video>
-  <div class="caption">
-    <h3>{$a['title']}</h3>
-    <p>{$a['text']}</p>
-  </div>
+    <iframe src="{$a['url']}" frameborder="0" allowfullscreen></iframe>
+
+    <div class="caption">
+        <h3>{$a['title']}</h3>
+        <p>{$a['text']}</p>
+    </div>
 </div>
 EOB;
 

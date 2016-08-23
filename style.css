@@ -1062,3 +1062,7 @@ object {
 .btn-purple.focus, .btn-purple:focus, .btn-purple:hover {
     color: white;
 }
+
+.page_header {
+    margin-top: 20px;
+}

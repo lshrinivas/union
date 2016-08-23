@@ -1066,3 +1066,21 @@ object {
 .page-header {
     margin-top: 20px;
 }
+
+.thumbnail {
+    max-width: 350px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.thumbnail_strip {
+    position: relative;
+}
+.thumbnail_content {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+a.thumbnail_left:visited, a.thumbnail_right:visited {
+    color: white;
+}

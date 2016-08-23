@@ -30,4 +30,16 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    // scrolling for thumbnail strip
+    $('a.thumbnail_left').bind('click', function(event) {
+        $(this).parent('.thumbnail_strip').find('.thumbnail_content').animate({
+            scrollLeft: '-=250px'
+        });
+    });
+    $('a.thumbnail_right').bind('click', function(event) {
+        $(this).parent('.thumbnail_strip').find('.thumbnail_content').animate({
+            scrollLeft: '+=250px'
+        });
+    });
 });

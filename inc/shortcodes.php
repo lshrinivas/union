@@ -30,15 +30,19 @@ EOB;
 add_shortcode( 'resource_video', 'resource_video_func' );
 
 // [tinted_image img_url="image url" color="rgba(...)"]
-function tinted_image_func( $atts ) {
+function tinted_image_func( $atts, $content ) {
     $a = shortcode_atts( array(
         'img_url' => '',
-        'color' => 'rgba(255, 255, 255, 0.3)'
+        'color' => 'rgba(255, 255, 255, 0.3)',
+        'img_position' => 'center center'
     ), $atts );
 
-    $html = <<<EOB
-<div style="background-image: url({$a['img_url']}); background-size: cover; background-repeat: no-repeat; background-position: left top;">
+    $content = do_shortcode($content);
 
+    $html = <<<EOB
+<div style="background-image: url({$a['img_url']}); background-position={$a['img_position']}" class="tinted_image">
+    <div class="tinted_image-tint" style="background-color: {$a['color']}"></div>
+    <div class="tinted_image-content">{$content}</div>
 </div>
 EOB;
 

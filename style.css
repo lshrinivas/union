@@ -1084,3 +1084,23 @@ object {
 a.thumbnail_left:visited, a.thumbnail_right:visited {
     color: white;
 }
+
+.tinted_image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.tinted_image-tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.tinted_image-content {
+    position: relative;
+    z-index: 1;
+}

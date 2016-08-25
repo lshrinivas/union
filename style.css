@@ -582,7 +582,7 @@ a:active {
     border-bottom-color: #777;
 }
 
-.navbar-scrolling {
+.navbar-scrolling .container {
     background-color: rgba(129,56,148,0.5);
     border-color: #813894;
 }

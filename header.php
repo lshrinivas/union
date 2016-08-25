@@ -90,7 +90,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-5 col-sm-7">
-                        <nav id="site-navigation" class="navbar navbar-default" role="navigation">
+                        <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
                             <div class="navbar-header navbar-left">
                                 <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
                                     <span class="sr-only">Toggle navigation</span>

@@ -1083,8 +1083,7 @@ object {
 }
 
 .donate_button {
-    /*margin-top: 8px;*/
-    /*float: right;*/
+    font-weight: bold;
 }
 
 .divider {

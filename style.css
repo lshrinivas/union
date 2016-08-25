@@ -1064,7 +1064,7 @@ object {
 }
 
 .carousel-bar {
-    background: #813894;
+    background: rgba(129,56,148,0.5);
     padding: 2px;
     text-align: center;
     color: white;

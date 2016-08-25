@@ -88,40 +88,43 @@
     		</div><!-- .container -->
         <?php else : ?>
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-5 col-sm-7">
-                        <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
-                            <div class="navbar-header navbar-left">
-                                <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
+                <div class="logo_nav_container">
+                    <div class="nav-container">
+                        <div class="nav-right">
+                            <div class="social_media">
+                                <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                             </div>
-                            <div class="collapse navbar-collapse" id="main_nav">
-                                <?php wp_nav_menu( array(
-                                    'theme_location' => 'primary',
-                                    'menu_id' => 'primary-menu',
-                                    'menu_class' => 'nav navbar-nav',
-                                     'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                                     'walker' => new wp_bootstrap_navwalker()
-                                 ) ); ?>
+                            <div>
+                                <a href="#">
+                                    <button class="btn btn-success donate_button">
+                                        Donate
+                                    </button>
+                                </a>
                             </div>
-                        </nav><!-- #site-navigation -->
-                    </div>
-                    <div class="col-xs-7 col-sm-5 nav-right">
-                        <div class="social_media">
-                            <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                         </div>
-                        <div>
-                            <a href="#">
-                                <button class="btn btn-success donate_button">
-                                    Donate
-                                </button>
-                            </a>
+                        <div class="">
+                            <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
+                                <div class="navbar-header navbar-left">
+                                    <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse" id="main_nav">
+                                    <?php wp_nav_menu( array(
+                                        'theme_location' => 'primary',
+                                        'menu_id' => 'primary-menu',
+                                        'menu_class' => 'nav navbar-nav',
+                                         'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                         'walker' => new wp_bootstrap_navwalker()
+                                     ) ); ?>
+                                </div>
+                            </nav><!-- #site-navigation -->
                         </div>
                     </div>
+
                 </div>
             </div>
         <?php endif; /*End front page check.*/ ?>

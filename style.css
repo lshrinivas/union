@@ -1162,6 +1162,8 @@ object {
 
 .thumbnail .caption {
     font-size: 14px;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 a.thumbnail_left:visited, a.thumbnail_right:visited {

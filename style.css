@@ -1148,6 +1148,7 @@ object {
     margin: 10px;
     height: 370px;
     vertical-align: top;
+    white-space: normal;
 }
 
 .thumbnail_strip {
@@ -1160,7 +1161,6 @@ object {
 
 .thumbnail .caption {
     font-size: 14px;
-    white-space: initial;
 }
 
 a.thumbnail_left:visited, a.thumbnail_right:visited {

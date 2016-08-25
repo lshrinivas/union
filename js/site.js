@@ -33,11 +33,13 @@ $(function() {
 
     // scrolling for thumbnail strip
     $('a.thumbnail_left').bind('click', function(event) {
+        event.preventDefault();
         $(this).parent('.thumbnail_strip').find('.thumbnail_content').animate({
             scrollLeft: '-=250px'
         });
     });
     $('a.thumbnail_right').bind('click', function(event) {
+        event.preventDefault();
         $(this).parent('.thumbnail_strip').find('.thumbnail_content').animate({
             scrollLeft: '+=250px'
         });

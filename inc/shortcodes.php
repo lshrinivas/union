@@ -78,7 +78,8 @@ function carousel_item_func( $atts ) {
         'url' => '',
         'title' => '',
         'bar_content' => '',
-        'active' => false
+        'active' => false,
+        'title_class' => ''
     ), $atts );
 
     $activeClass = "";
@@ -100,7 +101,7 @@ BAR;
     <video autoplay loop>
         <source src="{$a['url']}">
     </video>
-    <div class="video_message">
+    <div class="video_message {$a['title_class']}">
         {$title}
     </div>
     {$bar}

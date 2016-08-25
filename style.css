@@ -1105,13 +1105,22 @@ object {
     color: white;
     position: absolute;
     bottom: 30%;
-    font-size: 30px;
+    font-size: 40px;
+}
+
+.video_message-left {
     left: 15%;
 }
 
-.item:nth-child(2) .video_message {
+.video_message-center {
+    left: 45%;
+
+}
+
+.video_message-right {
     left: 65%;
 }
+
 
 .more_text {
     display: none;

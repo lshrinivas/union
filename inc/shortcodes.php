@@ -72,3 +72,86 @@ EOB;
 }
 add_shortcode( 'thumbnail_strip', 'thumbnail_strip_func' );
 
+// One item in a carousel
+function carousel_item_func( $atts ) {
+    $a = shortcode_atts( array(
+        'url' => '',
+        'title' => '',
+        'bar_content' => '',
+        'active' => false
+    ), $atts );
+
+    $activeClass = "";
+    if ($a['active']) { $activeClass = "active"; }
+
+    $bar = "";
+    if (!empty($a['bar_content'])) {
+        $bar = <<<BAR
+<div class="carousel-bar">
+    <h4>{$a['bar_content']}</h4>
+</div>
+BAR;
+    }
+
+    $title = $a['title'];
+
+    $html = <<<EOB
+<div class="item {$activeClass}">
+    <video autoplay loop>
+        <source src="{$a['url']}">
+    </video>
+    <div class="video_message">
+        {$title}
+    </div>
+    {$bar}
+</div>
+EOB;
+
+    return $html;
+}
+add_shortcode( 'carousel_item', 'carousel_item_func' );
+
+// Carousel
+function carousel_func( $atts, $content ) {
+
+    $a = shortcode_atts( array(
+        'interval' => 3000,
+    ), $atts );
+
+    $num_items = substr_count($content, 'carousel_item');
+
+    $carouselIndicators = "";
+    $activeClass = 'class="active"';
+    for ($i=0; $i < $num_items; $i++) {
+        $carouselIndicators .= "<li data-target=\"#carousel\" data-slide-to=\"{$i}\" {$activeClass}></li>";
+        $activeClass = '';
+    }
+
+    $content = do_shortcode($content);
+    $html = <<<EOB
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval={$a['interval']}>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        {$carouselIndicators}
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        {$content}
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+EOB;
+
+    return $html;
+}
+add_shortcode( 'carousel', 'carousel_func' );

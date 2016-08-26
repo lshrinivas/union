@@ -557,6 +557,12 @@ a:active {
     background: rgba(108, 169, 66, 1);
 }
 
+.navbar-internal .navbar-brand {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 /* link */
 .navbar-internal .navbar-nav > li > a {
     color: white;
@@ -969,6 +975,12 @@ object {
     width:100%;
 }
 
+.logo_container-small {
+    margin-top: 2px;
+    max-width: 120px;
+    width:100%;
+}
+
 .nav-container {
     margin-top: 10px;
     width: 100%;
@@ -997,6 +1009,11 @@ object {
 .navlogo-image {
     width: 445px;
     height: 120px;
+}
+
+.custom-logo {
+    width: 120px;
+    height: 100px;
 }
 
 .call_to_action {
@@ -1064,7 +1081,7 @@ object {
 }
 
 .carousel-bar {
-    background: rgba(129,56,148,0.5);
+    background: rgba(129,56,148,0.7);
     padding: 2px;
     text-align: center;
     color: white;

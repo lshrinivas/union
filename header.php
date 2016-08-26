@@ -41,48 +41,50 @@
 	<header id="masthead" class="site-header" role="banner">
         <?php if ( !is_front_page() && get_header_image() ) : ?>
             <div class="container">
-                <div class="logo_nav_container">
-                    <div class="logo_container hidden-md hidden-xs hidden-sm">
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                            <img src="<?php header_image(); ?>" class="navlogo-image" alt="TEAM Logo">
-                        </a>
-                    </div>
-                    <div class="nav-container">
-                        <div class="nav-right">
-                            <div class="social_media">
-                                <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+                <div class="row">
+                    <div class="logo_nav_container">
+                        <div class="logo_container hidden-md hidden-xs hidden-sm">
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                <img src="<?php header_image(); ?>" class="navlogo-image" alt="TEAM Logo">
+                            </a>
+                        </div>
+                        <div class="nav-container">
+                            <div class="nav-right">
+                                <div class="social_media">
+                                    <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <button class="btn btn-success donate_button">
+                                            Donate
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                            <div>
-                                <a href="#">
-                                    <button class="btn btn-success donate_button">
-                                        Donate
-                                    </button>
-                                </a>
+                            <div class="">
+                                <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
+                                    <div class="navbar-header navbar-left">
+                                        <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand hidden-lg" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">HOME</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="main_nav">
+                                        <?php wp_nav_menu( array(
+                                            'theme_location' => 'primary',
+                                            'menu_id' => 'primary-menu',
+                                            'menu_class' => 'nav navbar-nav',
+                                             'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                             'walker' => new wp_bootstrap_navwalker()
+                                         ) ); ?>
+                                    </div>
+                                </nav><!-- #site-navigation -->
                             </div>
                         </div>
-                        <div class="">
-                            <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
-                                <div class="navbar-header navbar-left">
-                                    <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div class="collapse navbar-collapse" id="main_nav">
-                                    <?php wp_nav_menu( array(
-                                        'theme_location' => 'primary',
-                                        'menu_id' => 'primary-menu',
-                                        'menu_class' => 'nav navbar-nav',
-                                         'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                                         'walker' => new wp_bootstrap_navwalker()
-                                     ) ); ?>
-                                </div>
-                            </nav><!-- #site-navigation -->
-                        </div>
                     </div>
-
                 </div>
 
     		</div><!-- .container -->

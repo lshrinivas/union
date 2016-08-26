@@ -29,6 +29,14 @@ function union_custom_header_setup() {
 		'flex-height'            => true,
 		'wp-head-callback'       => 'union_header_style',
 	) ) );
+
+	add_theme_support( 'custom-logo', array(
+		'width'                  => 1650,
+		'height'                 => 450,
+		'flex-height'            => true,
+        'flex-width'             => true
+	) );
+
 }
 add_action( 'after_setup_theme', 'union_custom_header_setup' );
 

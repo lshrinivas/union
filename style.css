@@ -507,7 +507,6 @@ textarea {
 
 .crm-container table td {
     font-size: 16px;
-    padding-left: 6px;
 }
 
 #crm-container.crm-public div.label {
@@ -519,6 +518,12 @@ textarea {
     display: none !important;
 }
 
+.crm-container .crm-button input.crm-form-submit {
+    color: #fff !important;
+    background-color: #337ab7 !important;
+    border-color: #2e6da4 !important;
+    border-radius: 4px !important;
+}
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

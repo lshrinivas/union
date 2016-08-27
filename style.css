@@ -510,12 +510,12 @@ textarea {
 }
 
 #crm-container.crm-public .label {
-    padding-top: 15px !important;
+    padding-top: 15px;
     font-weight: bold;
 }
 
 .crm-container .crm-submit-buttons .cancel {
-    display: none;
+    display: none !important;
 }
 
 /*--------------------------------------------------------------

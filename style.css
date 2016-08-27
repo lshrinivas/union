@@ -505,8 +505,9 @@ textarea {
     font-size: 16px !important;
 }
 
-.crm-container table {
+.crm-container table td {
     font-size: 16px;
+    padding-left: 6px;
 }
 
 #crm-container.crm-public div.label {

@@ -509,7 +509,7 @@ textarea {
     font-size: 16px;
 }
 
-#crm-container.crm-public .label {
+#crm-container.crm-public div.label {
     padding-top: 15px;
     font-weight: bold;
 }

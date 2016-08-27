@@ -30,4 +30,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_footer();
+    if (!is_page('civicrm')) {
+        get_footer();
+    }

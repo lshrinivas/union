@@ -497,6 +497,18 @@ textarea {
 	width: 100%;
 }
 
+.label {
+    color: black;
+}
+
+.crm-container .help, .crm-container #help {
+    font-size: 16px;
+}
+
+.crm-container table {
+    font-size: 16px;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

@@ -513,6 +513,11 @@ textarea {
     padding-top: 15px !important;
     font-weight: bold;
 }
+
+.crm-container .crm-submit-buttons .cancel {
+    display: none;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

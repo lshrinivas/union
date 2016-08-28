@@ -39,7 +39,7 @@ function tinted_image_func( $atts, $content ) {
     $content = do_shortcode($content);
 
     $html = <<<EOB
-<div style="background-image: url({$a['img_url']}); background-position={$a['img_position']}" class="tinted_image">
+<div style="background-image: url({$a['img_url']}); background-position: {$a['img_position']}" class="tinted_image">
     <div class="tinted_image-tint" style="background-color: {$a['color']}"></div>
     <div class="tinted_image-content">{$content}</div>
 </div>

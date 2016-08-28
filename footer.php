@@ -16,13 +16,20 @@
 	<footer id="colophon" class="container site-footer" role="contentinfo">
         <div class="divider"></div>
 
-        <?php
-            $page = get_page_by_title( 'FooterContent' );
-            $content = $page->post_content;
-            $content = apply_filters('the_content', $content);
-            $content = str_replace(']]>', ']]>', $content);
-            echo $content;
-        ?>
+        <div>If you or someone you know needs immediate help, please call the Crisis Hotline: 800.273.8255 (TALK).</div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-3 col-md-offset-3">
+                 <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+            </div>
+            <div class="col-xs-12 col-md-6 footer-search">
+                 <?php get_search_form(); ?>
+            </div>
+        </div>
+        <br>
+        <div>
+            <a href="contact-us">Contact Us</a> | <a href="privacy-policy">Privacy Policy</a> | <a href="http://www.teamasianminds.org/wp-content/uploads/2016/08/Media-Kit.pdf" target="_blank">Media Kit</a> | <a href="http://www.teamasianminds.org/draft/news/press/">Press</a>
+        </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

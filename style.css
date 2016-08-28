@@ -1134,6 +1134,11 @@ object {
     padding: 10px;
 }
 
+.footer-search {
+    margin-top: 9px;
+    text-align: left;
+}
+
 .donate_button {
     font-weight: bold;
 }

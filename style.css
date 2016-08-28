@@ -1262,6 +1262,6 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
     z-index: 1;
 }
 
-.wp-post_content-wrap {
+#wp-post_content-wrap {
 	border: 1px solid #ddd;
 }

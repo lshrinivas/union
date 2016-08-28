@@ -1290,5 +1290,8 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
 
 .listing-item .excerpt {
     display: block;
+}
+
+.listing-item .title {
     font-family: 'Gloria Hallelujah', cursive;
 }

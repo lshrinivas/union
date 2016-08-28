@@ -1261,3 +1261,7 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
     position: relative;
     z-index: 1;
 }
+
+.wp-post_content-wrap {
+	border: 1px solid #ddd;
+}

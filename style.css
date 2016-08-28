@@ -1265,3 +1265,29 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
 #wp-post_content-wrap {
 	border: 1px solid #ddd;
 }
+
+/* Blogs */
+.display-posts-listing {
+    margin: 1em;
+    padding-left: 0;
+}
+
+.listing-item {
+    list-style: none;
+    display: block;
+    background: #eee;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.listing-item .date {
+    float: right
+}
+
+.listing-item .excerpt-dash {
+    display: none;
+}
+
+.listing-item .excerpt {
+    display: block;
+}

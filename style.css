@@ -1260,6 +1260,7 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
     position:relative;
     padding: 60px;
     font-size: 21px;
+    color: white;
 }
 
 /* Blogs */

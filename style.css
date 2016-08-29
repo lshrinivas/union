@@ -1255,7 +1255,11 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
 
 .social_share {
     display: none;
-    padding: 20px;
+    text-align: center;
+    z-index:1;
+    position:relative;
+    padding: 60px;
+    font-size: 21px;
 }
 
 /* Blogs */

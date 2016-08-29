@@ -44,4 +44,13 @@ $(function() {
             scrollLeft: '+=250px'
         });
     });
+
+    $('button.take_pledge').bind('click', function(event) {
+        event.preventDefault();
+        var data = {
+            'action': 'take_pledge'
+        };
+        // We can also pass the url value separately from ajaxurl for front end AJAX implementations
+        $.post(ajax_object.ajax_url, data);
+    })
 });

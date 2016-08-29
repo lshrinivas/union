@@ -113,6 +113,9 @@ function union_scripts() {
 
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/site.js', array (), 1.1, true);
 
+    // in JavaScript, object properties are accessed as ajax_object.ajax_url, ajax_object.we_value
+	wp_localize_script( 'script', 'ajax_object',
+            array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -147,3 +150,24 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/shortcodes.php';
 
 add_shortcode('search', 'get_search_form');
+
+add_action('wp_ajax_take_pledge', 'take_pledge_callback');
+add_action('wp_ajax_nopriv_take_pledge', 'take_pledge_callback');
+
+function take_pledge_callback() {
+
+    global $post;  // You still may need to pass the POST ID here from the JS ajax.
+    // get each post by ID
+    $postID = $post->ID;
+    // get the post's custom fields
+    $custom = get_post_custom($postID);
+    // find the view count field
+    $views = intval($custom['number_attending'][0]);
+    // increment the count
+    if($views > 0) {
+        update_post_meta($postID, 'number_attending', ($views + 1));
+    } else {
+        add_post_meta($postID, 'number_attending', 1, true);
+    }
+    wp_die(); // this is required to return a proper result
+}

@@ -1253,6 +1253,11 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
 	border: 1px solid #ddd;
 }
 
+.social_share {
+    display: none;
+    padding: 20px;
+}
+
 /* Blogs */
 .display-posts-listing {
     margin: 1em;

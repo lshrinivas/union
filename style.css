@@ -1156,6 +1156,12 @@ object {
     font-size: 70px;
 }
 
+@media (max-width: 992px) {
+    .video_message {
+        font-size: 50px;
+    }
+}
+
 @media (max-width: 768px) {
     .video_message {
         font-size: 30px;
@@ -1166,11 +1172,6 @@ object {
     }
 }
 
-@media (max-width: 992px) {
-    .video_message {
-        font-size: 50px;
-    }
-}
 .video_message-left {
     left: 15%;
 }

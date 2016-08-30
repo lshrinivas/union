@@ -16,7 +16,11 @@
 	<footer id="colophon" class="container site-footer" role="contentinfo">
         <div class="divider"></div>
 
-        <div>If you or someone you know needs immediate help, please call the Crisis Hotline: 800.273.8255 (TALK).</div>
+        <div style="font-size: 16px;">
+            If you or someone you know needs immediate help, please call the
+            Crisis Hotline: 800.273.8255 (TALK) or visit
+            <a href="aaspe.net" target="_blank">Asian Lifenet Helpline</a>.
+        </div>
         <div class="divider"></div>
         <div class="row">
             <div class="col-xs-12 col-md-3 col-md-offset-3">

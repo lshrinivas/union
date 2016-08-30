@@ -1130,8 +1130,9 @@ object {
 }
 
 .footer-search {
-    margin-top: 9px;
+    margin-top: 14px;
     text-align: left;
+    font-size: 16px;
 }
 
 .donate_button {

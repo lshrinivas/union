@@ -23,11 +23,11 @@
                  <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
             </div>
             <div class="col-xs-12 col-md-6 footer-search">
+                <a href="contact-us">Contact Us</a> | <a href="privacy-policy">Privacy Policy</a> | <a href="http://www.teamasianminds.org/wp-content/uploads/2016/08/Media-Kit.pdf" target="_blank">Media Kit</a> | <a href="http://www.teamasianminds.org/draft/news/press/">Press</a>
             </div>
         </div>
         <br>
         <div>
-            <a href="contact-us">Contact Us</a> | <a href="privacy-policy">Privacy Policy</a> | <a href="http://www.teamasianminds.org/wp-content/uploads/2016/08/Media-Kit.pdf" target="_blank">Media Kit</a> | <a href="http://www.teamasianminds.org/draft/news/press/">Press</a>
         </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

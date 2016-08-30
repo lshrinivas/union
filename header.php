@@ -49,19 +49,28 @@
                             </a>
                         </div>
                         <div class="nav-container">
-                            <div class="nav-right">
-                                <div class="social_media">
-                                    <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="header_search">
+                                         <?php get_search_form(); ?>
+                                    </div>
                                 </div>
-                                <div>
-                                    <a href="#">
-                                        <button class="btn btn-success donate_button">
-                                            Donate
-                                        </button>
-                                    </a>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="nav-right">
+                                        <div class="social_media">
+                                            <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <button class="btn btn-success donate_button">
+                                                    Donate
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="">
+                            </div
+                            <div class="row">
                                 <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
                                     <div class="navbar-header navbar-left">
                                         <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
@@ -82,7 +91,8 @@
                                          ) ); ?>
                                     </div>
                                 </nav><!-- #site-navigation -->
-                            </div>
+                            </div
+
                         </div>
                     </div>
                 </div>
@@ -132,15 +142,6 @@
                         </div>
                     </nav><!-- #site-navigation -->
                 </div
-
-                <div class="logo_nav_container">
-                    <div class="nav-container">
-
-                        <div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         <?php endif; /*End front page check.*/ ?>
 	</header><!-- #masthead -->

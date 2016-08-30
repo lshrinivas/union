@@ -548,10 +548,6 @@ a:active {
 	outline: 0;
 }
 
-.header_search {
-    display: inline-block;
-}
-
 .navbar {
 	margin-bottom: 0;
     border: none;
@@ -1157,12 +1153,16 @@ object {
     color: white;
     position: absolute;
     bottom: 30%;
-    font-size: 40px;
+    font-size: 70px;
 }
 
 @media (max-width: 768px) {
     .video_message {
         font-size: 30px;
+    }
+
+    .header_search {
+        margin-left: 16px;
     }
 }
 

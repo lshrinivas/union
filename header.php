@@ -90,8 +90,13 @@
     		</div><!-- .container -->
         <?php else : ?>
             <div class="container">
-                <div class="logo_nav_container">
-                    <div class="nav-container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="header_search">
+                             <?php get_search_form(); ?>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
                         <div class="nav-right">
                             <div class="social_media">
                                 <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
@@ -104,26 +109,34 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="">
-                            <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
-                                <div class="navbar-header navbar-left">
-                                    <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div class="collapse navbar-collapse" id="main_nav">
-                                    <?php wp_nav_menu( array(
-                                        'theme_location' => 'primary',
-                                        'menu_id' => 'primary-menu',
-                                        'menu_class' => 'nav navbar-nav',
-                                         'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                                         'walker' => new wp_bootstrap_navwalker()
-                                     ) ); ?>
-                                </div>
-                            </nav><!-- #site-navigation -->
+                    </div>
+                </div
+                <div class="row">
+                    <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
+                        <div class="navbar-header navbar-left">
+                            <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="main_nav">
+                            <?php wp_nav_menu( array(
+                                'theme_location' => 'primary',
+                                'menu_id' => 'primary-menu',
+                                'menu_class' => 'nav navbar-nav',
+                                 'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                 'walker' => new wp_bootstrap_navwalker()
+                             ) ); ?>
+                        </div>
+                    </nav><!-- #site-navigation -->
+                </div
+
+                <div class="logo_nav_container">
+                    <div class="nav-container">
+
+                        <div>
                         </div>
                     </div>
 

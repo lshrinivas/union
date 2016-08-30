@@ -548,6 +548,10 @@ a:active {
 	outline: 0;
 }
 
+.header_search {
+    display: inline-block;
+}
+
 .navbar {
 	margin-bottom: 0;
     border: none;
@@ -987,6 +991,10 @@ object {
     align-items: center;
 }
 
+.header_search {
+    margin-top: 8px;
+}
+
 .social_media {
     width: 240px;
     height: 51px;
@@ -1260,7 +1268,7 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
     position:relative;
     padding: 60px;
     font-size: 21px;
-    color: white;
+    color: black;
 }
 
 /* Blogs */

@@ -23,7 +23,6 @@
                  <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
             </div>
             <div class="col-xs-12 col-md-6 footer-search">
-                 <?php get_search_form(); ?>
             </div>
         </div>
         <br>

@@ -61,7 +61,7 @@
                                             <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                                         </div>
                                         <div>
-                                            <a href="#">
+                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY4D2Z27MV6C6" target="_blank">
                                                 <button class="btn btn-success donate_button">
                                                     Donate
                                                 </button>

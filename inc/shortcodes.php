@@ -156,3 +156,24 @@ EOB;
     return $html;
 }
 add_shortcode( 'carousel', 'carousel_func' );
+
+function num_posts_in_category_func( $atts ) {
+
+    $a = shortcode_atts( array(
+        'category' => '',
+        'class' => ''
+    ), $atts );
+
+
+    $postsInCat = get_term_by('name', $a['category'], 'category');
+    $postsInCat = $postsInCat->count;
+
+    $html = <<<EOB
+<span class="{$a['class']}">
+    {$postsInCat}
+</span>
+EOB;
+
+    return $html;
+}
+add_shortcode( 'num_posts_in_category', 'num_posts_in_category_func' );

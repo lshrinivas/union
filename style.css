@@ -1167,10 +1167,10 @@ object {
         font-size: 30px;
     }
 
-    ..carousel-inner {
+    .carousel-inner {
         overflow: visible;
     }
-    
+
     .carousel-bar {
         bottom: auto;
         top: 96%;

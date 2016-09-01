@@ -1190,6 +1190,15 @@ object {
         font-size: 21px;
         margin-top: 65px;
     }
+
+    .crm-container .crm-section .content {
+        margin-left: 0;
+    }
+
+    .crm-container .crm-section .label {
+        width: 100%;
+        text-align: left;
+    }
 }
 
 .video_message-left {

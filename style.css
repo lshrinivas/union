@@ -1192,12 +1192,12 @@ object {
     }
 
     .crm-container .crm-section .content {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     .crm-container .crm-section .label {
-        width: 100%;
-        text-align: left;
+        width: 100% !important;
+        text-align: left !important;
     }
 }
 

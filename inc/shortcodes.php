@@ -164,13 +164,18 @@ function num_posts_in_category_func( $atts ) {
         'class' => ''
     ), $atts );
 
+    $postsInCat = new WP_Query( array(
+        'post_type' => 'post',
+        'post_status' => 'any',
+        'posts_per_page' => -1,
+        'category_name' => $a['category']
+      ) );
 
-    $postsInCat = get_term_by('name', $a['category'], 'category');
-    $postsInCat = $postsInCat->count;
+    $numPosts = $postsInCat->found_posts;
 
     $html = <<<EOB
 <span class="{$a['class']}">
-    {$postsInCat}
+    {$numPosts}
 </span>
 EOB;
 

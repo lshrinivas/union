@@ -1167,6 +1167,14 @@ object {
         font-size: 30px;
     }
 
+    ..carousel-inner {
+        overflow: visible;
+    }
+    
+    .carousel-bar {
+        bottom: auto;
+        top: 96%;
+    }
     .header_search {
         margin-left: 16px;
     }

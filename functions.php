@@ -61,10 +61,11 @@ function union_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'union_custom_background_args', array(
-		'default-color' => 'ffffff',
 		'default-image' => '',
+		'wp-head-callback' => 'change_custom_background_cb'
 	) ) );
 
+    add_filter('body_class', 'disable_custom_background_css');
 }
 endif;
 add_action( 'after_setup_theme', 'union_setup' );
@@ -151,23 +152,52 @@ require get_template_directory() . '/inc/shortcodes.php';
 
 add_shortcode('search', 'get_search_form');
 
-add_action('wp_ajax_take_pledge', 'take_pledge_callback');
-add_action('wp_ajax_nopriv_take_pledge', 'take_pledge_callback');
+function change_custom_background_cb() {
+    $background = get_background_image();
+    $color = get_background_color();
 
-function take_pledge_callback() {
+    if ( ! $background && ! $color )
+        return;
 
-    global $post;  // You still may need to pass the POST ID here from the JS ajax.
-    // get each post by ID
-    $postID = $post->ID;
-    // get the post's custom fields
-    $custom = get_post_custom($postID);
-    // find the view count field
-    $views = intval($custom['number_attending'][0]);
-    // increment the count
-    if($views > 0) {
-        update_post_meta($postID, 'number_attending', ($views + 1));
-    } else {
-        add_post_meta($postID, 'number_attending', 1, true);
+    $style = $color ? "background-color: #$color;" : '';
+    $size = "background-size: cover;";
+
+    if ( $background ) {
+        $image = " background-image: url('$background');";
+
+        $repeat = get_theme_mod( 'background_repeat', 'repeat' );
+
+        if ( ! in_array( $repeat, array( 'no-repeat', 'repeat-x', 'repeat-y', 'repeat' ) ) )
+            $repeat = 'repeat';
+
+        $repeat = " background-repeat: $repeat;";
+
+        $position = get_theme_mod( 'background_position_x', 'left' );
+
+        if ( ! in_array( $position, array( 'center', 'right', 'left' ) ) )
+            $position = 'left';
+
+        $position = " background-position: top $position;";
+
+        $attachment = get_theme_mod( 'background_attachment', 'scroll' );
+
+        if ( ! in_array( $attachment, array( 'fixed', 'scroll' ) ) )
+            $attachment = 'scroll';
+
+        $attachment = " background-attachment: $attachment;";
+
+        $style .= $image . $repeat . $position . $attachment . $size;
     }
-    wp_die(); // this is required to return a proper result
+?>
+<style type="text/css">
+.custom-background { <?php echo trim( $style ); ?> }
+</style>
+<?php
+}
+
+function disable_custom_background_css($classes) {
+    $key = array_search('custom-background', $classes, true);
+    if($key !== false)
+        unset($classes[$key]);
+    return $classes;
 }

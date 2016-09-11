@@ -16,8 +16,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href='https://fonts.googleapis.com/css?family=Dosis:700,800' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,200,200italic,700,400italic,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -35,115 +36,33 @@
 <?php require_once('inc/wp_bootstrap_navwalker.php'); ?>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'union' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-        <?php if ( !is_front_page() && get_header_image() ) : ?>
-            <div class="container">
-                <div class="row">
-                    <div class="logo_nav_container">
-                        <div class="logo_container hidden-md hidden-xs hidden-sm">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                                <img src="<?php header_image(); ?>" class="navlogo-image" alt="TEAM Logo">
-                            </a>
-                        </div>
-                        <div class="nav-container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6">
-                                    <div class="header_search">
-                                         <?php get_search_form(); ?>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6">
-                                    <div class="nav-right">
-                                        <div class="social_media">
-                                            <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
-                                        </div>
-                                        <div>
-                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY4D2Z27MV6C6" target="_blank">
-                                                <button class="btn btn-success donate_button">
-                                                    Donate
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div
-                            <div class="row">
-                                <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
-                                    <div class="navbar-header navbar-left">
-                                        <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <a class="navbar-brand hidden-lg" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">HOME</a>
-                                    </div>
-                                    <div class="collapse navbar-collapse" id="main_nav">
-                                        <?php wp_nav_menu( array(
-                                            'theme_location' => 'primary',
-                                            'menu_id' => 'primary-menu',
-                                            'menu_class' => 'nav navbar-nav',
-                                             'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                                             'walker' => new wp_bootstrap_navwalker()
-                                         ) ); ?>
-                                    </div>
-                                </nav><!-- #site-navigation -->
-                            </div
-
-                        </div>
-                    </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="title_container row">
+                <div class="col-md-12">
+                    <h1 class="title">SanghWE</h1>
+                    <h3 class="subtitle">Collective for Women's Empowerment</h3>
                 </div>
-
-    		</div><!-- .container -->
-        <?php else : ?>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="header_search">
-                             <?php get_search_form(); ?>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="nav-right">
-                            <div class="social_media">
-                                <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <button class="btn btn-success donate_button">
-                                        Donate
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div
-                <div class="row">
-                    <nav id="site-navigation" class="navbar navbar-default navbar-internal" role="navigation">
-                        <div class="navbar-header navbar-left">
-                            <button type="button" class="navbar-toggle pull-left collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse" id="main_nav">
-                            <?php wp_nav_menu( array(
-                                'theme_location' => 'primary',
-                                'menu_id' => 'primary-menu',
-                                'menu_class' => 'nav navbar-nav',
-                                 'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                                 'walker' => new wp_bootstrap_navwalker()
-                             ) ); ?>
-                        </div>
-                    </nav><!-- #site-navigation -->
-                </div
             </div>
-        <?php endif; /*End front page check.*/ ?>
-	</header><!-- #masthead -->
+        </div>
+    </div>
+</div>
 
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header navbar-right">
+            <?php wp_nav_menu( array(
+                'theme_location' => 'primary',
+                'menu_id' => 'primary-menu',
+                'menu_class' => 'nav navbar-nav',
+                'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                'walker' => new wp_bootstrap_navwalker()
+             ) ); ?>
+        </div>
+    </div>
+</nav>
+
+<div id="page" class="site">
 	<div id="content" class="site-content">

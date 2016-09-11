@@ -13,27 +13,15 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="container site-footer" role="contentinfo">
-        <div class="divider"></div>
+    <footer class="navbar navbar-fixed-bottom">
+        <div class="container-fluid">
+            <div class="navbar-header footer_text">
+                <i>Sangh-WE is a charitable organization registered in the State of Massachusetts, awaiting
+                    501c3 designation.</i>
+            </div>
+        </div>
+    </footer>
 
-        <div style="font-size: 16px;">
-            If you or someone you know needs immediate help, please call the
-            Crisis Hotline: 800.273.8255 (TALK) or visit
-            <a href="http://aaspe.net/" target="_blank">Asian Lifenet Helpline</a>.
-        </div>
-        <div class="divider"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-3 col-md-offset-3">
-                 <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
-            </div>
-            <div class="col-xs-12 col-md-6 footer-search">
-                <a href="contact-us">Contact Us</a> | <a href="privacy-policy">Privacy Policy</a> | <a href="http://www.teamasianminds.org/wp-content/uploads/2016/08/Media-Kit.pdf" target="_blank">Media Kit</a> | <a href="news/press/">Press</a>
-            </div>
-        </div>
-        <br>
-        <div>
-        </div>
-	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

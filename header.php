@@ -39,13 +39,16 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-xs-9 col-sm-offset-1">
             <div class="title_container row">
                 <div class="col-md-12">
                     <h1 class="title">SanghWE</h1>
                     <h3 class="subtitle">Collective for Women's Empowerment</h3>
                 </div>
             </div>
+        </div>
+        <div class="col-xs-2">
+            <button class="btn btn-lg btn-info donate_button pull-right">Donate</button>
         </div>
     </div>
 </div>

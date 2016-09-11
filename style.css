@@ -996,6 +996,7 @@ object {
 
 .donate_button {
     font-weight: bold;
+    margin: 14px 14px 0 0;
 }
 
 .divider {
@@ -1196,7 +1197,8 @@ a.thumbnail_left:visited, a.thumbnail_right:visited {
 }
 
 .listing-item .title {
-    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+    border: none;
 }
 
 /* Counter style */

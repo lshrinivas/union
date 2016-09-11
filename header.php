@@ -37,6 +37,11 @@
 
 <body <?php body_class(); ?>>
 
+<?php
+    $home_page = get_page_by_title( 'Home' );
+    $donate_link = get_post_meta($home_page->ID, 'donate_link', true);
+?>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-9 col-sm-offset-1">
@@ -48,7 +53,9 @@
             </div>
         </div>
         <div class="col-xs-2">
-            <button class="btn btn-lg btn-info donate_button pull-right">Donate</button>
+            <a href="<?php echo $donate_link; ?>">
+                <button class="btn btn-lg btn-info donate_button pull-right">Donate</button>
+            </a>
         </div>
     </div>
 </div>

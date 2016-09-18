@@ -1051,6 +1051,10 @@ object {
     color: white;
 }
 
+.call_to_action a {
+    text-decoration: none;
+}
+
 .call_to_action-title {
     position: relative;
     font-size: 30px;

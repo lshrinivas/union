@@ -63,7 +63,7 @@
                                         <div>
                                             <a href="http://www.teamasianminds.org/make-a-donation/">
                                                 <button class="btn btn-lg btn-warning donate_button">
-                                                    D<span class="glyphicon glyphicon-heart-empty"></span>nate
+                                                    <span class="glyphicon glyphicon-heart-empty"></span> Donate
                                                 </button>
                                             </a>
                                         </div>
@@ -114,7 +114,7 @@
                             <div>
                                 <a href="http://www.teamasianminds.org/make-a-donation/">
                                     <button class="btn btn-lg btn-warning donate_button">
-                                        D<span class="glyphicon glyphicon-heart-empty"></span>nate
+                                        <span class="glyphicon glyphicon-heart-empty"></span> Donate
                                     </button>
                                 </a>
                             </div>

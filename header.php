@@ -61,9 +61,9 @@
                                             <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                                         </div>
                                         <div>
-                                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UY4D2Z27MV6C6" target="_blank">
-                                                <button class="btn btn-success donate_button">
-                                                    Donate
+                                            <a href="http://www.teamasianminds.org/make-a-donation/">
+                                                <button class="btn btn-warning donate_button">
+                                                    D<span class"glyphicon glyphicon-heart-empty"></span>nate
                                                 </button>
                                             </a>
                                         </div>
@@ -112,9 +112,9 @@
                                 <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
                             </div>
                             <div>
-                                <a href="#">
-                                    <button class="btn btn-success donate_button">
-                                        Donate
+                                <a href="http://www.teamasianminds.org/make-a-donation/">
+                                    <button class="btn btn-warning donate_button">
+                                        D<span class"glyphicon glyphicon-heart-empty"></span>nate
                                     </button>
                                 </a>
                             </div>

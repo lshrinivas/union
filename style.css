@@ -1133,6 +1133,8 @@ object {
 
 .donate_button {
     font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dosis, sans-serif;
 }
 
 .divider {

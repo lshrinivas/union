@@ -44,7 +44,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-9 col-sm-offset-1">
+        <div class="col-xs-8 col-sm-offset-1">
             <div class="title_container row">
                 <div class="col-md-12">
                     <h1 class="title">SanghWE</h1>
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-2">
+        <div class="pull-right">
             <a href="<?php echo $donate_link; ?>">
                 <button class="btn btn-lg btn-info donate_button pull-right">Donate</button>
             </a>
@@ -63,13 +63,21 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header navbar-right">
-            <?php wp_nav_menu( array(
-                'theme_location' => 'primary',
-                'menu_id' => 'primary-menu',
-                'menu_class' => 'nav navbar-nav',
-                'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                'walker' => new wp_bootstrap_navwalker()
-             ) ); ?>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id="navbar" class="navbar-collapse collapse">
+                <?php wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'menu_id' => 'primary-menu',
+                    'menu_class' => 'nav navbar-nav',
+                    'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                    'walker' => new wp_bootstrap_navwalker()
+                 ) ); ?>                
+            </div>
         </div>
     </div>
 </nav>

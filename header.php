@@ -32,6 +32,7 @@
 <?php wp_head(); ?>
 </head>
 
+
 <?php require_once('inc/wp_bootstrap_navwalker.php'); ?>
 
 <body <?php body_class(); ?>>
@@ -130,6 +131,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
+                            <a class="navbar-brand visible-xs" href="<?php echo esc_url( home_url( '/team-efforts/pledge/' ) ); ?>" rel="home">TAKE THE PLEDGE</a>
                         </div>
                         <div class="collapse navbar-collapse" id="main_nav">
                             <?php wp_nav_menu( array(

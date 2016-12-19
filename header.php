@@ -53,6 +53,9 @@
             </div>
         </div>
         <div class="pull-right">
+            <a href="https://smile.amazon.com/ch/81-3106146" target="_blank">
+                <img src="/wp-content/uploads/2016/12/Donate_AmazonSmile.png"  class="amazon_smile" />
+            </a>
             <a href="<?php echo $donate_link; ?>">
                 <button class="btn btn-lg btn-info donate_button pull-right">Donate</button>
             </a>

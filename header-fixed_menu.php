@@ -50,12 +50,12 @@
                     </div>
                     <div class="nav-container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-5">
                                 <div class="header_search">
                                         <?php get_search_form(); ?>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-5">
                                 <div class="nav-right">
                                     <div class="social_media">
                                         <?php echo DISPLAY_ULTIMATE_PLUS(); ?>

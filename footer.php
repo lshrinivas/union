@@ -16,8 +16,8 @@
     <footer class="navbar navbar-fixed-bottom">
         <div class="container-fluid">
             <div class="navbar-header footer_text">
-                <i>Sangh-WE is a charitable organization registered in the State of Massachusetts, awaiting
-                    501c3 designation.</i>
+               <!-- <i>Sangh-WE is a charitable organization registered in the State of Massachusetts, awaiting
+                    501c3 designation.</i> -->
             </div>
         </div>
     </footer>
